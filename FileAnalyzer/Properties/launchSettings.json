@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FileAnalyzer": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\Derek\\Downloads\\C:\\Users\\Derek\\Downloads\\MSP432_REFs\\Code-Composer-User-Guide-MSP432---slau157ao.pdf"
+    }
+  }
+}

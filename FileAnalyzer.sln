@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileAnalyzer", "FileAnalyzer\FileAnalyzer.csproj", "{10A2A645-82F7-46E7-9660-34D41EBC8EF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FANUnitTest", "FANUnitTest\FANUnitTest.csproj", "{AEFD2C2F-EC66-40D8-A2ED-43FACCBE2FDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10A2A645-82F7-46E7-9660-34D41EBC8EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A2A645-82F7-46E7-9660-34D41EBC8EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A2A645-82F7-46E7-9660-34D41EBC8EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A2A645-82F7-46E7-9660-34D41EBC8EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEFD2C2F-EC66-40D8-A2ED-43FACCBE2FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEFD2C2F-EC66-40D8-A2ED-43FACCBE2FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEFD2C2F-EC66-40D8-A2ED-43FACCBE2FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEFD2C2F-EC66-40D8-A2ED-43FACCBE2FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79EAB8D5-6A1E-42FF-8E26-74E91805C637}
+	EndGlobalSection
+EndGlobal
