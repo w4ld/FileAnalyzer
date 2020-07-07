@@ -80,8 +80,15 @@ C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\bin\Debug\netcoreapp3.1\ru
 C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\obj\Debug\netcoreapp3.1\FileAnalyzer.csprojAssemblyReference.cache
 C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\obj\Debug\netcoreapp3.1\FileAnalyzer.AssemblyInfoInputs.cache
 C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\obj\Debug\netcoreapp3.1\FileAnalyzer.AssemblyInfo.cs
-C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\obj\Debug\netcoreapp3.1\FileAnalyzer.csproj.CoreCompileInputs.cache
 C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\obj\Debug\netcoreapp3.1\FileAnalyzer.csproj.CopyComplete
 C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\obj\Debug\netcoreapp3.1\FileAnalyzer.dll
 C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\obj\Debug\netcoreapp3.1\FileAnalyzer.pdb
 C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\obj\Debug\netcoreapp3.1\FileAnalyzer.genruntimeconfig.cache
+C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\obj\Debug\netcoreapp3.1\FileAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\bin\Debug\netcoreapp3.1\Microsoft.Dynamic.dll
+C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\bin\Debug\netcoreapp3.1\Microsoft.Scripting.Metadata.dll
+C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\bin\Debug\netcoreapp3.1\Microsoft.Scripting.dll
+C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\bin\Debug\netcoreapp3.1\IronPython.Modules.dll
+C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\bin\Debug\netcoreapp3.1\IronPython.SQLite.dll
+C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\bin\Debug\netcoreapp3.1\IronPython.dll
+C:\Users\Derek\source\repos\FileAnalyzer\FileAnalyzer\bin\Debug\netcoreapp3.1\System.CodeDom.dll

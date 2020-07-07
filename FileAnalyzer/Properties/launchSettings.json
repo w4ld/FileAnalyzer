@@ -2,7 +2,7 @@
   "profiles": {
     "FileAnalyzer": {
       "commandName": "Project",
-      "commandLineArgs": "C:\\Users\\Derek\\Downloads\\C:\\Users\\Derek\\Downloads\\MSP432_REFs\\Code-Composer-User-Guide-MSP432---slau157ao.pdf"
+      "commandLineArgs": "--folder C:\\Users\\Derek\\source\\repos\\FileAnalyzer\\ProjectTestFiles\\   --os --guess --pii --strings --yara"
     }
   }
 }

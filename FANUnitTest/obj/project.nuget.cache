@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "2f2m9Zrj8FFtR0s1JRpsWv6YOpdP9UVVx83GOJH7yqDPuqDINi5ZYRwPe39c0ZIDb6ZcGkptzzbyr37Ii0QpQw==",
+  "dgSpecHash": "pQXTc/25RySnRLFspSztPdmvg3IYIbqwgG10u2anXZQuWqctNl2dcJijLhC3wahuU2lCfZylNzBMp9pMjQVffg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Derek\\source\\repos\\FileAnalyzer\\FANUnitTest\\FANUnitTest.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Derek\\.nuget\\packages\\dynamiclanguageruntime\\1.2.3\\dynamiclanguageruntime.1.2.3.nupkg.sha512",
+    "C:\\Users\\Derek\\.nuget\\packages\\ironpython\\2.7.10\\ironpython.2.7.10.nupkg.sha512",
     "C:\\Users\\Derek\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\Derek\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Derek\\.nuget\\packages\\microsoft.dotnet.internalabstractions\\1.0.0\\microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512",
@@ -22,6 +24,7 @@
     "C:\\Users\\Derek\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512",
     "C:\\Users\\Derek\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Derek\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
+    "C:\\Users\\Derek\\.nuget\\packages\\system.codedom\\4.7.0\\system.codedom.4.7.0.nupkg.sha512",
     "C:\\Users\\Derek\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Derek\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
     "C:\\Users\\Derek\\.nuget\\packages\\system.collections.specialized\\4.3.0\\system.collections.specialized.4.3.0.nupkg.sha512",
@@ -76,8 +79,7 @@
     "C:\\Users\\Derek\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
     "C:\\Users\\Derek\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Derek\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\Derek\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Derek\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\Derek\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
