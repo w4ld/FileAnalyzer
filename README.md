@@ -16,7 +16,9 @@ Requirements
 
 	
 Configurations
-	you may have to reconfigure the path to your python in the PythonScripts.cs file.
+	You may have to reconfigure the path to your python in the PythonScripts.cs file.
+	
+	You may have to update some of geoip's liburl functionality for Python3
 	
 	All other file paths have been reconfigured to hopefully be self-contained.
 
