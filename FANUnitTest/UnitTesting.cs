@@ -236,17 +236,19 @@ namespace FANUnitTest
                 "2345.8.64.199",
                 "999.999.999.999",
                 "8.iy",
-                "8348g8gh"
+                "8348g8gh",
+                "4.4.4.4 iwe0gh i 5.5.5.5"
             };
 
             List<Match> matches = FAStrings.ParseIPv4(ips);
             List<string> strMatches = new List<string>
             {
                 "8.8.8.8",
-                "192.168.0.1"
+                "192.168.0.1",
+                "4.4.4.4",
+                "5.5.5.5"
             };
-            //foreach (Match m in matches)
-            //  strMatches.Add(m.Value);
+            
             foreach (Match m in matches)
                 Assert.Contains(m.Value, strMatches);
             Assert.AreEqual(matches.Count, strMatches.Count);

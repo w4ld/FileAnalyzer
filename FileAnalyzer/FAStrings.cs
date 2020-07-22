@@ -8,7 +8,7 @@ namespace FileAnalyzer
 {
     public class FAStrings
     {
-
+        //todo maybe refactor this into a display method with a title parameter and not found string
         public static void DisplayIPv4s(List<string> foundStrings)
         {
             List<Match> foundIPs = FAStrings.ParseIPv4(foundStrings);
@@ -187,7 +187,9 @@ namespace FileAnalyzer
         public static List<Match> ParsePhoneNumbers(List<string> foundStringList)
         {
             //american phone number +1 or (333)-333-3333
-            Regex r = new Regex(@"^(\+1)?\(?\d{3}?\)?\-?\d{3}\-?\d{4}", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            Regex r = new Regex(@"^(\+1)?\(?\d{3}?\)?[- .]?\d{3}[- .]?\d{4}", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            //TODO international numbers
+            //Regex r = new Regex(@"^\+(?:\d[ ]?){6,14}\d", RegexOptions.Compiled | RegexOptions.IgnoreCase);
             List<Match> matches = new List<Match>();
             foreach (string s in foundStringList)
                 if (r.IsMatch(s))
@@ -218,7 +220,7 @@ namespace FileAnalyzer
         {
             //onestring.dll shouldnt have 
             //TODO shoudlnt be able to start with a number right? maybe it flies... double check this
-            Regex r = new Regex(@"^\w(\w|\d)*\.dll$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            Regex r = new Regex(@"\b\w(\w|\d)*\.dll$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
             List<Match> matches = new List<Match>();
             foreach (string s in foundStringList)
@@ -234,15 +236,9 @@ namespace FileAnalyzer
         public static List<Match> ParseWebsites(List<string> foundStringList)
         {
             //TODO refine website Regex
-            //string pattern1 = @"(http://)+(www\.)+\w+[\.\w]+";
-            //string pattern2 = @"https://\w+[\.\w]+";
-            //string pattern3 = @"www.\w+[\.\w]+";
-
-            //Regex rx1 = new Regex(pattern1, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            //Regex rx2 = new Regex(pattern2, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            //Regex rx3 = new Regex(pattern3, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            // string text = @"http://www.google.com http://thisshouldalsoworm.gov/osadjfo/oasdjf oadsodfjo.mil the quick brown fox fox www.facebook.com/thiswebsitesucks https://thisishoweverywebsitezhouldbe.biz jumps over the lazy dog dog.";
-            Regex r = new Regex(@"^http(s)?://\w+(\.\w+)+(/(\w|\d)*)*", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            //types of protocols https, http, ftp
+            //special chars allowed in URL +&@#/%?=~_|$!:,.;
+            Regex r = new Regex(@"\b(https?|ftp|file)://[-A-Z0-9+&@#/%?=~_|$!:,.;]*[A-Z0-9+&@#/%=~_|$]", RegexOptions.Compiled | RegexOptions.IgnoreCase);
             List<Match> matches = new List<Match>();
             foreach (string s in foundStringList)
                 if (r.IsMatch(s))
@@ -288,14 +284,21 @@ namespace FileAnalyzer
         public static List<Match> ParseIPv4(List<string> foundStringList)
         {
             //IPv4
-            Regex r = new Regex(@"[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            //bool loopBool = true;
+            Regex r = new Regex(@"([0-9]{1,3}\.){3}[0-9]{1,3}", RegexOptions.Compiled | RegexOptions.IgnoreCase);
             List<Match> matches = new List<Match>();
+            string st = "";
             foreach (string s in foundStringList)
-                if (r.IsMatch(s))
+                st = s;
+                while (r.IsMatch(st))
                 {
-                    //Console.WriteLine((s));
-                    if (IPChecker.IsValidIPv4(s) != IPChecker.IPv4Class.NiR)
-                        matches.Add(r.Match(s));
+                    Console.WriteLine((st));
+                    if (IPChecker.IsValidIPv4(st) != IPChecker.IPv4Class.NiR)
+                {
+                        Console.WriteLine($"Match: {r.Match(st).Value}");
+                        matches.Add(r.Match(st));
+                }
+                    st = st.Substring(r.Match(st).Index + r.Match(st).Length); 
                 }
             return matches;
         }

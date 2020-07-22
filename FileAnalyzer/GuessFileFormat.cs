@@ -395,5 +395,6 @@ namespace FileAnalyzer
 /*********************************************************
 *TODO change signatures to return a list of possibles.
 *   iterate list with further poking. then maybe we can corner various file types....
+*TODO adapt process to output initial list then ask to further identify
 *
 */

@@ -11,13 +11,11 @@ namespace FileAnalyzer
         /// </summary>
         public static void OS_Information()
         {
-
+            //enumerating the Environment
             PlatformID x = new PlatformID();
             OperatingSystem os = Environment.OSVersion;
 
-           
             var user = Environment.UserName;
-
 
             int processor_count = Environment.ProcessorCount;
             string cl = Environment.CommandLine;
