@@ -23,4 +23,4 @@ Configurations
 	All other file paths have been reconfigured to hopefully be self-contained.
 
 	
-Currently uses a Yara rule written by cofense as an example placeholder.
+Currently uses a Yara rule written by cofense as an example placeholder for testing of Yara Python script.
