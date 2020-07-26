@@ -187,13 +187,17 @@ namespace FileAnalyzer
         public static List<Match> ParsePhoneNumbers(List<string> foundStringList)
         {
             //american phone number +1 or (333)-333-3333
-            Regex r = new Regex(@"^(\+1)?\(?\d{3}?\)?[- .]?\d{3}[- .]?\d{4}", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            //TODO international numbers
-            //Regex r = new Regex(@"^\+(?:\d[ ]?){6,14}\d", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            Regex r1 = new Regex(@"^(\+1)?\(?\d{3}?\)?[- .]?\d{3}[- .]?\d{4}", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            //international numbers
+            Regex r2 = new Regex(@"^\+(?:\d[ ]?){6,14}\d", RegexOptions.Compiled | RegexOptions.IgnoreCase);
             List<Match> matches = new List<Match>();
             foreach (string s in foundStringList)
-                if (r.IsMatch(s))
-                    matches.Add(r.Match(s));
+            {
+                if (r1.IsMatch(s))
+                    matches.Add(r1.Match(s));
+                else if (r2.IsMatch(s))
+                    matches.Add(r2.Match(s));
+            }
             return matches;
         }
         /// <summary>
@@ -235,7 +239,7 @@ namespace FileAnalyzer
         /// <returns>list of matches</returns>
         public static List<Match> ParseWebsites(List<string> foundStringList)
         {
-            //TODO refine website Regex
+            //TODO test website Regex
             //types of protocols https, http, ftp
             //special chars allowed in URL +&@#/%?=~_|$!:,.;
             Regex r = new Regex(@"\b(https?|ftp|file)://[-A-Z0-9+&@#/%?=~_|$!:,.;]*[A-Z0-9+&@#/%=~_|$]", RegexOptions.Compiled | RegexOptions.IgnoreCase);

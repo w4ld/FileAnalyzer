@@ -59,7 +59,6 @@ namespace FileAnalyzer
                         return IPv4Class.E;
                 }
             }
-
             return IPv4Class.NiR;
         }
 

@@ -6,13 +6,15 @@ using System.Text.RegularExpressions;
 
 namespace FANUnitTest
 {
+    [TestFixture]
     public class StringPIITests
     {
+
         [SetUp]
         public void Setup()
         {
         }
-
+        //TODO adapt old tests to testcases for uniformity
         [Test]
         public void TestParsePhoneNumbers1()
         {
@@ -440,5 +442,15 @@ namespace FANUnitTest
 
         }
         #endregion
+    }
+
+    [TestFixture]
+    public class UtilitiesTesting
+    {
+        [Test]
+        public static void StdOut()
+        {
+            bool test = FAUtilities.GetUserInput("Are you ready?");
+        }
     }
 }

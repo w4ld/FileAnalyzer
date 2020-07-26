@@ -28,35 +28,54 @@ namespace FileAnalyzer
                 //Refactor this into something for zips
                 //TODO do the same for other formats.
                 FASignature fasig;
+                bool? scrutenize=null;
                 foreach (var sig in sigs)
                 {
                     if (sig.HexSignature == "50 4B 03 04")    //this is the first match in the database for zip
                     {
-
-                        fasig = IdentifyZip(filename);
-                        if (fasig != null)
+                        //prompt to interrogate further
+                        if(scrutenize==null)
+                            scrutenize = FAUtilities.GetUserInput("Ambiguous File Header.\n Would you like to interrogate further?");
+                        else if ((bool)scrutenize)
                         {
-                            Console.WriteLine("\t" + fasig.ToString(full: true));
-                            break;
+                            fasig = IdentifyZip(filename);
+                            if (fasig != null)
+                            {
+                                Console.WriteLine("\t" + fasig.ToString(full: true));
+                                break;
+                            }
+                            else
+                                Console.WriteLine("\t" + sig.ToString(full: true));
                         }
                         else
                             Console.WriteLine("\t" + sig.ToString(full: true));
                     }
                     else if (sig.HexSignature == "FF D8 FF E0")
                     {
-                        fasig = IdentifyJPEG(filename);
-                        Console.WriteLine("\t" + fasig.ToString(full: true));
-                        break;
-                    }
+                        if (scrutenize == null)
+                            scrutenize = FAUtilities.GetUserInput("Ambiguous File Header.\n Would you like to interrogate further?");
+                        else if ((bool)scrutenize)
+                        {
+                            fasig = IdentifyJPEG(filename);
+                            Console.WriteLine("\t" + fasig.ToString(full: true));
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("\t" + sig.ToString(full: true));
+                        }
+                    }   //jpeg
+                    //insert other scrutinization here.
                     else
                     {
                         Console.WriteLine("\t" + sig.ToString(full: true));
                     }
-                    //heres where you can try further ID
+                    
                 }
             }
             else
             {
+                //TODO no specific matches. heres where to write methods to scrutenize files without headers.
                 if (!TestTSQL(filename))
                     Console.WriteLine("\tNo Header Matched in DB. Possible ambiguous file type.");
             }

@@ -23,8 +23,7 @@ namespace FileAnalyzer
                 return;
             }
 
-
-            //TODO check out BinaryInfo class
+            
             FileStream outFile = null;
             string filename = "", folder = "", reportFile = "";
             bool yaraScan = false, toReport = false, isFile = false, isFolder = false, stringSearch = false, guessFile = false, pii = false, osInfo = false;
