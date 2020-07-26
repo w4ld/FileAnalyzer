@@ -1,0 +1,71 @@
+
+
+++++++++File Information++++++++
+	File Name: OfficeFileFormatsProtocols.zip
+	Extension: .zip
+	Size: 15 MB
+	Created: 6/26/2020 8:31:52 AM
+	Last Write: 7/1/2020 2:28:17 PM
+	Last Access: 7/1/2020 2:28:17 PM
+	Read-Only: False
+
+
+++++++++Hashes++++++++
+	MD5:    3103E31FE4AEE9D7290E38D2AEADB4DE
+	SHA1:   1072692B2D244481696C271EED5DEDAC4DA249FE
+	SHA512: E3CC5A759F12F45E7C95F4C0D1A0F8BD4D116AEAE07F2B3ED7A6EC187CA2FC86809A26AD6099B66F55C19D0BE3F94779303F5EA27E70989ADDB5C4DAEA8F6845
+	SHA384: AED59BB05C11A975AC9B512B83D1246A3C27BBF7B067866FC334D288C8DBD86CA45C425B547D8D294394ACBDE13A3C38
+	SHA256: 92E5BDDD179F71CC05FBFF82AE2FC9F5C5FB5105FE4BD20EF0FE36F242ED9E1C
+	SSDEEP: 393216:ztd59EUO28GP0tB5P6p28Ujvd9r+Vjn92w9UjfrHJYWZOUo:ztd5CqRctB9q2Tvdp+VjnIwqzrqWZOUo
+
+
+
+++++++++Magic File Headers Matches++++++++
+False
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:DOCX 
+		Description:  MS Office Open XML Format Document
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:JAR 
+		Description:  Java archive_1
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:KWD 
+		Description:  KWord document
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:ODP 
+		Description:  OpenDocument template
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:ODT 
+		Description:  OpenDocument template
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:OTT 
+		Description:  OpenDocument template
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:PPTX 
+		Description:  MS Office Open XML Format Document
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:SXC 
+		Description:  StarOffice spreadsheet
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:SXD 
+		Description:  OpenOffice documents
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:SXI 
+		Description:  OpenOffice documents
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:SXW 
+		Description:  OpenOffice documents
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:WMZ 
+		Description:  Windows Media compressed skin file
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:XLSX 
+		Description:  MS Office Open XML Format Document
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:XPI 
+		Description:  Mozilla Browser Archive
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offset:0	Extension:XPS 
+		Description:  XML paper specification file
+Zip of otherwise not currently implemented filetype.
+	Signature: 50 4B 03 04	Offse

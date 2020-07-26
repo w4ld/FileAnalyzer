@@ -450,7 +450,8 @@ namespace FANUnitTest
         [Test]
         public static void StdOut()
         {
-            bool test = FAUtilities.GetUserInput("Are you ready?");
+            //bool test = FAUtilities.GetUserInput("Are you ready?");
+            Console.WriteLine(Console.Out);
         }
     }
 }

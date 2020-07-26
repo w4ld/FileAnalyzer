@@ -3,6 +3,15 @@
     "FileAnalyzer": {
       "commandName": "Project",
       "commandLineArgs": "--folder C:\\Users\\Derek\\source\\repos\\FileAnalyzer\\ProjectTestFiles\\   --os --guess --pii --strings --yara"
+    },
+    "TestAll": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\Derek\\source\\repos\\FileAnalyzer\\FileAnalyzer\\bin\\Debug\\netcoreapp3.1\\FileAnalyzer.exe",
+      "commandLineArgs": "--folder C:\\Users\\Derek\\source\\repos\\FileAnalyzer\\ProjectTestFiles\\   --os --guess --pii --strings --yara"
+    },
+    "TestOutFile": {
+      "commandName": "Project",
+      "commandLineArgs": "--file C:\\Users\\Derek\\source\\repos\\FileAnalyzer\\ProjectTestFiles\\OfficeFileFormatsProtocols.zip   --guess  --report C:\\Users\\Derek\\source\\repos\\FileAnalyzer\\testreport.txt"
     }
   }
 }

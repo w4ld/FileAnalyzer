@@ -69,6 +69,7 @@ namespace FileAnalyzer
                         {
                             outFile = new FileStream(reportFile, FileMode.Create);
                             StreamWriter streamWriter = new StreamWriter(outFile);
+                            Console.WriteLine($"Building Report: {reportFile}");
                             Console.SetOut(streamWriter);
                         }
                         catch (Exception ex)

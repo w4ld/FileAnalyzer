@@ -9,13 +9,17 @@ namespace FileAnalyzer
     {
         public static bool GetUserInput(string prompt)
         {
-            TextWriter streamWriter=null;
-          
-            if(Console.IsOutputRedirected)
-            {
-                streamWriter = Console.Out;
-                Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));//set back to stdout
-            }
+            TextWriter oldOutput=null;
+            //Console.WriteLine(Console.IsOutputRedirected);
+
+            //if(Console.IsOutputRedirected) //TODO this does not detect a change of output to file. need better method 
+            //{
+             
+                oldOutput = Console.Out;
+                
+                Console.SetOut(new StreamWriter(Console.OpenStandardOutput()) { AutoFlush = true });//set back to stdout
+                
+            //}
             Console.WriteLine(prompt);
             string response = Console.ReadLine();
             bool VerifiedInput = false;
@@ -27,13 +31,13 @@ namespace FileAnalyzer
                 {
                     case "n":
                     case "no":       
-                        if (Console.IsOutputRedirected)                        
-                            Console.SetOut(streamWriter);                  
+                        //if (Console.IsOutputRedirected)                        
+                            Console.SetOut(oldOutput);                  
                         return false;
                     case "y":
                     case "yes":
-                        if (Console.IsOutputRedirected)                                               
-                            Console.SetOut(streamWriter);
+                        //if (Console.IsOutputRedirected)                                               
+                            Console.SetOut(oldOutput);
                         return true;
                     default:
                         Console.WriteLine("Please enter yes/no.\n"+prompt);
